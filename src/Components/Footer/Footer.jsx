@@ -50,14 +50,14 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer_icons">
-                <a href="https://www.facebook.com/txtgroup.uzb" className="footer_icon">
-                  <FaFacebookF />
-                </a>
-                <a href="https://www.instagram.com/txtgroup.uzb" className="footer_icon">
+              <a href="https://www.instagram.com/txtgroup.uzb" className="footer_icon">
                   <FaInstagram />
                 </a>
                 <a href="https://t.me/txtgroupuzb" className="footer_icon">
                   <FaTelegramPlane />
+                </a>
+                <a href="https://www.facebook.com/txtgroup.uzb" className="footer_icon">
+                  <FaFacebookF />
                 </a>
                 <a href="#!" className="footer_icon">
                   <FaYoutube />
