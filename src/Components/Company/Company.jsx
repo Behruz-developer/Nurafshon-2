@@ -4,7 +4,7 @@ import { useState } from "react";
 import universal from "../../assets/images/company.jpg";
 import { useEffect } from "react";
 import { useRef } from "react";
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo2.svg'
 
 
 const Company = () => {
