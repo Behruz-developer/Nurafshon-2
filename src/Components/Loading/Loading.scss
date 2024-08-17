@@ -92,7 +92,8 @@
 }
 
 .loading {
-    background: var(--gr-1);
+    background: #01512e;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +122,7 @@
     }
 
     img {
-
+        width:200%;
         @include media (1400px) {
             width: 500px;
         }
