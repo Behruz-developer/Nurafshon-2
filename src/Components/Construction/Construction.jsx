@@ -12,7 +12,7 @@ const Construction = () => {
             AOS.init({
                 duration: 1000,
                 once: true,
-                offset: window.innerWidth < 1400 ? 1000 : 400, 
+                offset: window.innerWidth < 1400 ? -1000 : 400, 
             });
         };
 
