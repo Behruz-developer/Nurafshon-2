@@ -5,7 +5,11 @@
 
 .about {
     height: auto;
+    overflow: hidden;
 
+    @include media (650px){
+        padding-bottom: 60px;
+    }
     &_box {
         display: grid;
         grid-template-columns: repeat(2, 47%);
