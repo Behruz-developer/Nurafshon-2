@@ -24,7 +24,7 @@ const Blocks_location = () => {
                 </svg>
               </div>
               <p className="blocks_location_map_text_text">
-                NRG Qorasuv - bu Yevropa va Sharq uslublarini birgalikda qollash orqali ishlab chigilgan eksklyuziv mualliflik dizayni.
+              Foydalanilgan materiallar va chiroyli detallar ushbu majmuaning har bir qismida alohida qulaylik va o‘ziga xoslik yaratadi.
               </p>
               {/* <p className="blocks_location_map_text_text2">Xaritada ko‘rish</p> */}
             </div>
@@ -33,14 +33,10 @@ const Blocks_location = () => {
           <div className="blocks_location_card_text">
             <h2 className="blocks_location_title">Majmua arxitekturasi</h2>
             <p className="blocks_location_text">
-              Majmua mutlaq xavfsiz va erkin hudud sifatida chuqur o'ylangan.
-              Hech ganday begona kishilar va chagirilmagan mehmonlar.
+              Majmua o‘zining zamonaviy va estetik arxitekturasi bilan ajralib turadi. Har bir bino nafis va innovatsion dizayn bilan yaratilgan, bu majmuaga nafaqat zamonaviylik, balki tabiat bilan uyg‘unlikni ham taqdim etadi.
             </p>
             <p className="blocks_location_text">
-              Hovlilarda avtomashina bo'lmaydi. Ishga mahorat ila yondashuv,
-              barcha tafsilotlarga e tiborli bo'lish va qurilish
-              materiallarining maxsus tanlovi mualliflar g'oyalarining amalga
-              oshishi uchun ishonchli kafolatdir.
+              Qulaylik va go‘zallikning mukammal uyg‘unligi, shahar hayoti va tabiiy muhitning o‘zaro to‘g‘ri balansini yaratadi. Yashash joyi sifatida Nurafshon sizga ilhom beruvchi va benuqson estetika bilan boyitilgan muhitni taqdim etadi.
             </p>
           </div>
 

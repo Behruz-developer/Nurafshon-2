@@ -194,16 +194,13 @@
 
     &_img {
         width: 100%;
-        transform: scaleX(-1);
         border-radius: 16px;
         object-fit: cover;
         object-position: top;
         height: 560px;
         display: block;
 
-        // @include media(1425px) {
-        //     height: 100%;
-        // }
+
 
         @include media(1000px) {
             border-radius: 14px;
@@ -231,7 +228,8 @@
             justify-content: center;
             align-items: center;
             @include media(800px) {
-                border-radius: 140px 12px 140px 12px;
+                border-radius: 12px 140px 12px 140px;
+
             }
             img{
                 width: 60%;

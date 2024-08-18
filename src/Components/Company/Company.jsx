@@ -1,10 +1,10 @@
 // /* eslint-disable no-undef */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import universal from "../../assets/images/company.jpg";
+import universal from "../../assets/images/form.jpg";
 import { useEffect } from "react";
 import { useRef } from "react";
-import logo from '../../assets/images/logo2.svg'
+import logo from '../../assets/images/logo.png'
 
 
 const Company = () => {
@@ -53,9 +53,7 @@ const Company = () => {
         <div className="company_box">
         <div className="company_card_img">
             <img src={universal} alt="" className="company_img" />
-            <div className="company_img_bg">
-              <img src={logo} alt="" />
-            </div>
+
           </div>
           <div className="company_card">
             <div className="company_card_top">

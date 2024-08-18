@@ -8,12 +8,22 @@ import { Link } from "react-scroll";
 const Upcoming = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [zoom, setZoom] = useState(true);
+
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setZoom(true); // Zoom-in boshlanadi
+    setTimeout(() => {
+      setZoom(false); // 3 sekunddan keyin zoom-out boshlanadi
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Zoom-out tugagach keyingi slaydga o'tish
+        setZoom(true); // Keyingi slayd uchun zoom-in boshlanadi
+      }, 3000); // 3 sekund zoom-out davomida
+    }, 3000); // 3 sekund zoom-in davomida
   };
 
   useEffect(() => {
-    const autoSlider = setInterval(nextSlide, 10000);
+    nextSlide(); // Dastlabki renderda birinchi slayd uchun zoom animatsiyasini boshlash
+    const autoSlider = setInterval(nextSlide, 6000); // Har bir slaydda umumiy jarayon 6 sekund davom etadi (3 sekund zoom-in + 3 sekund zoom-out)
     return () => clearInterval(autoSlider);
   }, []);
 
@@ -24,11 +34,13 @@ const Upcoming = ({ images }) => {
           {images &&
             images.map((src, index) => (
               <div
-                className={`img_card carousel-image ${index === currentIndex ? "current" : ""
-                  }`}
+                className={`img_card carousel-image ${index === currentIndex ? "current" : ""}`}
                 key={index}
               >
-                <img src={src} alt="" className="" />
+                <img src={src} alt="" style={{
+                  transform: index === currentIndex && zoom ? 'scale(1.1)' : 'scale(1)',
+                  transition: 'transform 3s' // Transform har doim 3 sekund davomida bo'ladi
+                }} />
                 <div className=" img_text ">
                   <div className="container">
                     <div className="upcoming_box">
@@ -37,12 +49,10 @@ const Upcoming = ({ images }) => {
                           className="slidet_text"
                           key={`navimage${index + 1}`}
                         >
-                          Baxtli hayot maskaniga xush kelibsiz!
+                          Qulay va farovon hayot uchun ideal maskan
                         </h3>
                         <p className="slidet_text2">
-                          NRG JOMIY - NRGning yangi biznes-klass turarjoy
-                          majmuasi, mashhur ortaosiyolik shoir Abdurahmon Jomiy
-                          sharafiga atalgan.
+                          Nurafshon — Urgut shahrining markazida barpo etilayotgan zamonaviy turar-joy majmuasi bo‘lib, u farovon hayot uchun barcha zarur qulayliklar va zamonaviy infrastruktura bilan ta'minlangan.
                         </p>
                       </div>
                       <div className="upcoming_icon2_card">

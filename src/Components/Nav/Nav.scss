@@ -28,6 +28,31 @@
         }
     }
 
+
+    &_txt {
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        bottom: -120px;
+
+        @include media (1410px) {
+            width: 80px;
+            bottom: -90px;
+        }
+        @include media (1000px) {
+            width: 60px;
+            bottom: -60px;
+        }
+        @include media (600px) {
+            width: 50px;
+            bottom: -55px;
+        }
+        &_img {
+
+            width: 100%;
+        }
+    }
+
     &_menu {
         display: none;
         width: 28px;
@@ -66,7 +91,11 @@
         justify-content: space-between;
         align-items: center;
         // position: relative;
-
+        &_container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
 
     }
 
