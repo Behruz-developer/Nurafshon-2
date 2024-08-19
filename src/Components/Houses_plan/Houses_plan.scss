@@ -47,8 +47,10 @@
     }
     &_card_number {
         display: flex;
-        background: #f6f6f4;
+        background: #01512e;
         border-radius: 32px;
+        padding: 5px;
+        color: white;
         @include media(650px) {
             overflow-x: scroll;
             width: 100%;
@@ -64,9 +66,9 @@
         transition: 0.2s;
         cursor: pointer;
         &.active {
-            background-color: var(--gr-1);
+            background-color: #fff;
             border-radius: 32px;
-            color: white;
+            color: #01512e;
         }
         @include media(1670px) {
             font-size: 22px;
@@ -88,9 +90,8 @@
         }
     }
     &_number:hover {
-        background-color: var(--gr-2);
+        background-color: #0c8a54;
         border-radius: 32px;
-        // color: white;
     }
 
     &_card_bottom,

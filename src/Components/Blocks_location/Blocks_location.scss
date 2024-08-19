@@ -152,6 +152,7 @@
         // column-gap: 5%;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 100%;
 
         @include media(1480px) {
             flex-direction: row;
@@ -298,7 +299,7 @@
 
     &_map_text {
         padding: 40px 56px;
-        background: var(--gr-2);
+        background: var(--gr-1);
         position: absolute;
         box-shadow: 0px 12px 26px 0px #0000001a;
         left: -1px;
@@ -349,7 +350,7 @@
             width: 50px;
             height: 100%;
             padding: 10px;
-            background: var(--gr-1);
+            background: white;
             border-radius: 16px;
 
             @include media(1000px) {
@@ -358,7 +359,7 @@
             }
 
             &_color {
-                stroke: white;
+                stroke: var(--gr-1);
             }
 
         }
@@ -369,7 +370,7 @@
             font-weight: 400;
             line-height: 32px;
             text-align: left;
-            color: var(--gr-1);
+            color: white;
 
             @include media(1538px) {
                 font-size: 22px;

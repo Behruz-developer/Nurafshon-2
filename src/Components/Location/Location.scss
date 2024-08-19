@@ -15,8 +15,7 @@
     &_box {
         width: 100%;
         display: grid;
-        // justify-content: end;
-        grid-template-columns: repeat(2, 46%);
+          grid-template-columns: repeat(2, 46%);
         grid-template-rows: repeat(3, 0.5fr);
         gap: 8%;
 
@@ -137,7 +136,7 @@
     &_card2 {
         grid-column-start: 1;
         width: 70%;
-        background-color: var(--gr-2);
+        background-color: var(--gr-1);
         padding: 24px 32px;
         border-radius: 32px 32px 32px 0px;
 
@@ -184,9 +183,9 @@
         line-height: 24px;
         text-align: left;
         width: 85%;
-        color: var(--gr-1);
+        color: white;
         padding-left: 8px;
-        border-left: 4px solid #005144;
+        border-left: 4px solid #fff;
 
         @include media(1200px) {
             width: 95%;
