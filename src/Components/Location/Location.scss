@@ -4,7 +4,14 @@
 }
 
 .location {
+    overflow: hidden;
 
+    @include media (1000px){
+        padding-bottom: 40px;
+    }
+    @include media (850px){
+        padding-bottom: 0px;
+    }
     &_box {
         width: 100%;
         display: grid;
