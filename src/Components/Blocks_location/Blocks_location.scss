@@ -185,7 +185,6 @@
     }
 
     &_icon_text {
-        // width: 330px;
         display: flex;
         align-items: start;
         font-family: "Golos Text", sans-serif;
@@ -221,7 +220,7 @@
         }
 
         @include media(650px) {
-            width: 90%;
+            width: 30%;
             font-size: 14px;
             line-height: 20px;
             flex-direction: row;

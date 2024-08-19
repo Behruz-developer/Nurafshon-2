@@ -131,6 +131,14 @@
             grid-column: span 2;
             // margin-top: 100px;
         }
+        @include media(550px) {
+            order: -1;
+            grid-row: span 1;
+            width: 100%;
+            margin-top: 10px;
+            grid-column: span 2;
+            // margin-top: 100px;
+        }
     }
 
     &_card2 {
