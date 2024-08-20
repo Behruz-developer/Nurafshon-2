@@ -10,6 +10,13 @@
     @include media (650px) {
         padding-bottom: 45px;
     }
+    @include media (450px) {
+        padding-bottom: 85px;
+    }
+    @include media (400px) {
+        padding-bottom: 113px;
+    }
+
 
     &_box {
         display: grid;
@@ -272,7 +279,12 @@
             left: -1px;
             border-radius: 16px, 16px, 120px, 16px;
             box-shadow: 0px 6px 8px 0px #0000001a;
-
+        }
+        @include media(450px) {
+            bottom: -75px;
+        }
+        @include media(400px) {
+            bottom: -105px;
         }
 
         &_box {
