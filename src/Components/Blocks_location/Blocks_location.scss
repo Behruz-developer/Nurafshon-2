@@ -163,7 +163,7 @@
             margin-top: 16px;
         }
 
-        @include media(660px) {
+        @include media(650px) {
             width: 100%;
             margin-top: 0;
             row-gap: 12px;
@@ -179,7 +179,7 @@
             width: 30%;
         }
 
-        @include media(600px) {
+        @include media(650px) {
             width: 100%;
         }
     }
@@ -220,7 +220,7 @@
         }
 
         @include media(650px) {
-            width: 30%;
+            width: 100%;
             font-size: 14px;
             line-height: 20px;
             flex-direction: row;
@@ -333,6 +333,10 @@
         @include media(650px) {
             width: 100%;
             bottom: -50px;
+        }
+        @include media(450px) {
+            width: 100%;
+            bottom: -70px;
         }
 
         &_box {

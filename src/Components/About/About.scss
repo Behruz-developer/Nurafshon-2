@@ -8,13 +8,16 @@
     overflow: hidden;
 
     @include media (650px) {
-        padding-bottom: 45px;
+        padding-bottom: 65px;
+    }
+    @include media (550px) {
+        padding-bottom: 115px;
     }
     @include media (450px) {
-        padding-bottom: 85px;
+        padding-bottom: 113px;
     }
     @include media (400px) {
-        padding-bottom: 113px;
+        padding-bottom: 143px;
     }
 
 
@@ -279,12 +282,16 @@
             left: -1px;
             border-radius: 16px, 16px, 120px, 16px;
             box-shadow: 0px 6px 8px 0px #0000001a;
+            bottom: -55px;
+        }
+        @include media(550px) {
+            bottom: -105px;
         }
         @include media(450px) {
-            bottom: -75px;
+            bottom: -105px;
         }
         @include media(400px) {
-            bottom: -105px;
+            bottom: -135px;
         }
 
         &_box {
