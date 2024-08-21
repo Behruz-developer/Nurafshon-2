@@ -57,7 +57,6 @@ body {
 }
 
 .about,
-.average,
 .blocks_location,
 .company,
 .construction,
@@ -66,13 +65,13 @@ body {
 .form {
   margin-top: 90px;
 
-  @include media (800px) {
-    margin-top: 40px;
-  }
+    @include media (800px) {
+      margin-top: 40px;
+    }
 
-  @include media (600px) {
-    margin-top: 16px;
-  }
+    @include media (600px) {
+      margin-top: 16px;
+    }
 
 }
 .about_title,

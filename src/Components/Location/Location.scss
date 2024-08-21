@@ -5,17 +5,30 @@
 
 .location {
     overflow: hidden;
+    margin-bottom: 90px;
 
-    @include media (1000px){
+
+
+    @include media (1000px) {
         padding-bottom: 40px;
     }
-    @include media (850px){
+
+    @include media (850px) {
         padding-bottom: 0px;
     }
+
+    @include media (800px) {
+        margin-bottom: 40px;
+    }
+
+    @include media (600px) {
+        margin-bottom: 16px;
+    }
+
     &_box {
         width: 100%;
         display: grid;
-          grid-template-columns: repeat(2, 46%);
+        grid-template-columns: repeat(2, 46%);
         grid-template-rows: repeat(3, 0.5fr);
         gap: 8%;
 
@@ -131,6 +144,7 @@
             grid-column: span 2;
             // margin-top: 100px;
         }
+
         @include media(550px) {
             order: -1;
             grid-row: span 1;

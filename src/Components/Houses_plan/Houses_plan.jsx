@@ -1,6 +1,8 @@
 import { useState } from "react";
-import houses from '../../assets/images/houses_plan.png';
-import universal from '../../assets/images/universal.png';
+import houses1 from '../../assets/images/houses1.jpg';
+import houses2 from '../../assets/images/houses2.jpg';
+import houses3 from '../../assets/images/houeses3.jpg';
+import houses4 from '../../assets/images/houses4.jpg';
 
 const Houses_plan = () => {
   const [activeNumber, setActiveNumber] = useState("Hammasi");
@@ -16,7 +18,7 @@ const Houses_plan = () => {
           <div className="houses_card_top">
             <h2 className="houses_title">Xonadonlarning o‘ylangan rejalari</h2>
             <div className="houses_card_number">
-              {["Hammasi", "1-xonali", "2-xonali", "3-xonali", "4-xonali"].map(
+              {["Hammasi", "2-xonali", "3-xonali", ].map(
                 (number) => (
                   <p
                     key={number}
@@ -35,31 +37,28 @@ const Houses_plan = () => {
           {/* Showing corresponding content based on activeNumber */}
           {activeNumber === "Hammasi" && (
             <div className="houses_card_bottom">
-              <img src={houses} alt="" className="houses_img" />
+              <img src={houses1} alt="" className="houses_img" />
               <div className="houses_border"></div>
-              <img src={houses} alt="" className="houses_img" />
+              <img src={houses4} alt="" className="houses_img" />
               <div className="houses_border"></div>
-              <img src={houses} alt="" className="houses_img" />
-            </div>
-          )}
-
-          {activeNumber === "1-xonali" && (
-            <div className="houses_card_bottom1">
-              <img src={universal} alt="" className="houses_img" />
-              <div className="houses_border"></div>
-              <img src={universal} alt="" className="houses_img" />
-              <div className="houses_border"></div>
-              <img src={universal} alt="" className="houses_img" />
+              <img src={houses2} alt="" className="houses_img" />
             </div>
           )}
 
           {activeNumber === "2-xonali" && (
+            <div className="houses_card_bottom1">
+              <img src={houses1} alt="" className="houses_img" />
+              <div className="houses_border"></div>
+              <img src={houses2} alt="" className="houses_img" />
+              <div className="houses_border"></div>
+              <img src={houses3} alt="" className="houses_img" />
+            </div>
+          )}
+
+          {activeNumber === "3-xonali" && (
             <div className="houses_card_bottom2">
-              <img src={universal} alt="" className="houses_img" />
-              <div className="houses_border"></div>
-              <img src={universal} alt="" className="houses_img" />
-              <div className="houses_border"></div>
-              <img src={universal} alt="" className="houses_img" />
+              <img src={houses4} alt="" className="houses_img" />
+
             </div>
           )}
 

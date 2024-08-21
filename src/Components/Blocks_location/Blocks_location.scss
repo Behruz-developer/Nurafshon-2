@@ -6,7 +6,13 @@
 .blocks_location {
     margin-bottom: 100px;
     height: auto;
+    @include media (800px) {
+        margin-bottom: 40px;
+    }
 
+    @include media (600px) {
+        margin-bottom: 16px;
+    }
     &_svg_box {
         width: 80px;
         height: 80px;

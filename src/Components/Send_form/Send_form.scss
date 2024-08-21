@@ -1,8 +1,18 @@
-:root{
+:root {
     --gr-1: #01512e;
     --gr-2: #D4E2E0;
 }
+
 .form {
+    margin-bottom: 90px;
+
+    @include media (800px) {
+        margin-bottom: 40px;
+    }
+
+    @include media (600px) {
+        margin-bottom: 16px;
+    }
 
     &_box {
         display: flex;
@@ -10,6 +20,7 @@
         // border: 2px solid #EEEEE5;
         border-radius: 16px 16px;
         flex-direction: row-reverse;
+
         @include media (1200px) {
             flex-direction: column;
         }
@@ -25,6 +36,7 @@
             display: block;
             height: 100%;
             object-fit: cover;
+
             @include media (1200px) {
                 border-radius: 16px 16px 0px 0px;
             }
@@ -72,6 +84,7 @@
         font-weight: 600;
         font-size: 32px;
         line-height: 48px;
+
         @include media (1200px) {
             font-size: 28px;
             line-height: 40px;
