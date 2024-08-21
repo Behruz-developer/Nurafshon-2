@@ -30,13 +30,13 @@ const App = () => {
       if (document.readyState === 'complete') {
         setTimeout(() => {
           setIsLoading(false);
-        }, 1000); // 2 soniya kutish
+        }, 1000); 
       } else {
         const interval = setInterval(() => {
           if (document.readyState === 'complete') {
             setTimeout(() => {
               setIsLoading(false);
-            }, 1000); // 2 soniya kutish
+            }, 1000); 
             clearInterval(interval);
           }
         }, 100);
