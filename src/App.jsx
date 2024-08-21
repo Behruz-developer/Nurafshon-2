@@ -67,7 +67,7 @@ const App = () => {
           <Send_form />
           <Block_average img={average3}/>
 
-          <Construction />
+          {/* <Construction /> */}
           <Company />
           <Block_average img={average4}/>
 
