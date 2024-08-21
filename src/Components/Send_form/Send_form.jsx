@@ -2,7 +2,6 @@
 import { useState } from "react";
 import form from "../../assets/images/mutaxasis.jpg";
 
-
 const Send_form = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
@@ -47,7 +46,11 @@ const Send_form = () => {
       return;
     }
 
-    const response = await sendToTelegramBot(formData);
+    // Telefon raqamini formatlash
+    const formattedTel = formData.tel.replace(/\D/g, ''); // Faqat raqamlar
+    const finalTel = `+${formattedTel}`;
+
+    const response = await sendToTelegramBot({ ...formData, tel: finalTel });
     if (response && response.ok) {
       alert("Xabar yuborildi!");
 
@@ -61,6 +64,13 @@ const Send_form = () => {
       alert("Xabar yuborishda xatolik yuz berdi");
     }
   };
+
+  const handleTelInput = (e) => {
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+    e.target.value = '+' + (x[1] ? x[1] + ' ' : '') + (x[2] ? '(' + x[2] + ')' : '') + (x[3] ? ' ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+    setFormData({ ...formData, tel: e.target.value });
+  };
+
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="container">
@@ -94,21 +104,28 @@ const Send_form = () => {
                     type="text"
                     name="tel"
                     id="tel"
-                    placeholder="+998"
+                    placeholder="Raqamingizni yozing"
                     value={formData.tel}
-                    onChange={(e) =>
-                      setFormData({ ...formData, tel: e.target.value })
-                    }
+                    onChange={handleTelInput}
                   />
                 </div>
               </div>
               <div className="form_chekbox">
-                <input type="checkbox" name="" checked={isChecked} id="consent" onChange={(e) => setIsChecked(e.target.checked)} />
+                <div className="form_chekbox_container">
+                  {" "}
+                  <input
+                    type="checkbox"
+                    name=""
+                    checked={isChecked}
+                    id="consent"
+                    onChange={(e) => setIsChecked(e.target.checked)}
+                  />
+                </div>
                 <p className="name_text">
-                  Shaxsiy maʼlumotlarim qayta ishlanishiga roziman
+                  Shaxsiy maʼlumotlarim qayta ishlanishiga roziman{" "}
                 </p>
               </div>
-              <button className="name_text" onClick={handleSubmit}>
+              <button className="name_text" type="submit">
                 Yuborish
               </button>
             </div>

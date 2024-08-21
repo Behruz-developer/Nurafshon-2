@@ -165,15 +165,44 @@
         width: 100%;
         margin-top: 24px;
         display: flex;
+        align-items: center;
         column-gap: 8px;
-        color: white;
+        color: #fff;
+
+        &_container {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 24px;
+        }
 
         input {
-            background-color: #57572d;
+            background-color: #fff;
             width: 24px;
             height: 24px;
             border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            box-shadow: none;
+            position: relative;
+        }
 
+        input:checked {
+            background-color: white;
+            border-color: white;
+        }
+
+        input:checked::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 8px;
+            width: 5px;
+            height: 10px;
+            border: solid #505050;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
         }
     }
 
