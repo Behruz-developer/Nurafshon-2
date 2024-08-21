@@ -117,9 +117,13 @@ const Nav = () => {
                     <div className="nav_card_right menu">
                       <div className="nav_contact">
                         <PiPhoneCallLight className="nav_phone_icon" />
-                        <a href="tel: 1361" className="nav_contact_text">
+                        <Link to="form"
+                          smooth={true}
+                          duration={500}
+                          offset={-50}
+                          href="#!" className="nav_contact_text" onClick={() => setActive(false)}>
                           1361
-                        </a>
+                        </Link>
                       </div>
                       <div className="nav_download">
                         <RxDownload className="nav_phone_icon" />
@@ -137,9 +141,13 @@ const Nav = () => {
               <div className="nav_card_right">
                 <div className="nav_contact">
                   <PiPhoneCallLight className="nav_phone_icon" />
-                  <a href="tel: 1361" className="nav_contact_text">
+                  <Link to="form"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    href="#!" className="nav_contact_text">
                     1361
-                  </a>
+                  </Link>
                   <IoMenu className="nav_menu" onClick={() => setActive(true)} />
                 </div>
                 <div className="nav_download download">
