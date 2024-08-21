@@ -47,10 +47,10 @@
             height: 55px;
         }
 
-        @include media(600px) {
-            width: 48px;
-            height: 48px;
-        }
+        // @include media(600px) {
+        //     width: 60px;
+        //     height: 60px;
+        // }
     }
 
     &_svg_icon1 {
@@ -199,7 +199,7 @@
         line-height: 32px;
         row-gap: 16px;
         flex-direction: column;
-        width: 27.5%;
+        width: 22.5%;
 
         @include media(1400px) {
             // width: 30%;
@@ -221,14 +221,12 @@
 
         @include media(800px) {
             width: 30%;
-            font-size: 14px;
+            // font-size: 14px;
             line-height: 20px;
         }
 
         @include media(650px) {
             width: 100%;
-            font-size: 14px;
-            line-height: 20px;
             flex-direction: row;
             column-gap: 5%;
             align-items: center;

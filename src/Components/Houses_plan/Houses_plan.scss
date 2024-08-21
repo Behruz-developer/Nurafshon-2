@@ -105,6 +105,7 @@
 
         @include media(800px) {
             overflow-x: scroll;
+            justify-content: start;
             margin-top: 40px;
             gap: 24px;
         }
