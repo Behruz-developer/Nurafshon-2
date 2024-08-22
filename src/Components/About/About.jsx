@@ -43,7 +43,7 @@ const About = () => {
                 <div className="about_icon_text_card">
                   <svg className="about_icon_text_img" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_2045_3034" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="7" y="8" width="65" height="64">
-                      <rect x="7" y="8" width="65" height="64" fill="url(#pattern0_2045_3034)" />
+                      <rect x="7" y="6.5" width="65" height="64" fill="url(#pattern0_2045_3034)" />
                     </mask>
                     <g mask="url(#mask0_2045_3034)">
                       <rect x="2" y="-4" width="76" height="88" fill="#01512E" />

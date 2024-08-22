@@ -48,6 +48,15 @@ const Send_form = () => {
 
     // Telefon raqamini formatlash
     const formattedTel = formData.tel.replace(/\D/g, ''); // Faqat raqamlar
+    if (!formData.name || formattedTel.length < 9) {
+      alert("Iltimos, barcha maydonlarni to'ldiring va telefon raqamingiz to'g'ri ekanligini tekshiring.");
+      return;
+    }
+
+    if (!isChecked) {
+      alert('Iltimos, shaxsiy ma\'lumotlarimni qayta ishlashga rozilik bering.');
+      return;
+    }
     const finalTel = `+${formattedTel}`;
 
     const response = await sendToTelegramBot({ ...formData, tel: finalTel });

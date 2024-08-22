@@ -10,12 +10,15 @@
     @include media (650px) {
         padding-bottom: 65px;
     }
+
     @include media (550px) {
         padding-bottom: 115px;
     }
+
     @include media (450px) {
         padding-bottom: 113px;
     }
+
     @include media (400px) {
         padding-bottom: 143px;
     }
@@ -103,6 +106,8 @@
         @include media(650px) {
             grid-column: span 1;
             grid-row: 2;
+            margin-top: 0px;
+
         }
     }
 
@@ -113,13 +118,16 @@
         column-gap: 5%;
         flex-wrap: wrap;
         width: 100%;
-        // @include media(1480px) {
-        //     flex-direction: row;
-        // }
 
-        // @include media (1100px) {
-        //     flex-wrap: wrap;
-        // }
+        @include media(800px) {
+            row-gap: 40px;
+
+        }
+
+        @include media (600px) {
+            row-gap: 30px;
+
+        }
     }
 
     &_icon_text {
@@ -284,12 +292,15 @@
             box-shadow: 0px 6px 8px 0px #0000001a;
             bottom: -55px;
         }
+
         @include media(550px) {
             bottom: -105px;
         }
+
         @include media(450px) {
             bottom: -105px;
         }
+
         @include media(400px) {
             bottom: -135px;
         }
