@@ -38,12 +38,18 @@
 
         }
 
+        @include media(850px) {
+            padding-bottom: 20px;
+        }
+
         @include media(650px) {
             // grid-template-columns: repeat(1, 100%);
             // grid-template-rows: repeat(3);
             // gap: 0;
             display: flex;
             flex-direction: column;
+            padding-bottom: 0px;
+
         }
     }
 
