@@ -1,5 +1,5 @@
 :root {
-    --gr-1: #01512e;
+    --gr-1: #000;
     --gr-2: #D4E2E0;
 }
 
@@ -180,11 +180,11 @@
             }
 
             &_color {
-                fill: var(--gr-1);
+                fill: #000;
             }
 
             &_color2 {
-                fill: var(--gr-2);
+                fill: #000;
             }
         }
 
@@ -332,7 +332,7 @@
             }
 
             &_color {
-                stroke: var(--gr-1);
+                stroke: #000;
             }
         }
 
